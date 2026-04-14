@@ -8,6 +8,7 @@
 
 ## {功能点名称}
 
+**状态**：Draft
 **优先级**：Normal / High / Critical
 
 ### 用例 1
@@ -38,6 +39,7 @@
 
 ## {功能点名称}
 
+**状态**：Draft
 **优先级**：Normal / High / Critical
 
 ### 用例 1

@@ -79,7 +79,14 @@ inclusion: manual
 - `.md`（Markdown）：结构清晰，便于阅读和版本管理
 - `.csv`：便于导入测试管理工具或用 Excel 查看编辑
 
-根据用户选择的格式生成对应文件。如果用户选择 `.csv`，则按照 `Name,Priority,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result` 四列格式输出，同一功能点的多个用例中，第二条起 Name 和 Priority 留空（与原始 CSV 模版一致）。
+根据用户选择的格式生成对应文件。如果用户选择 `.csv`，则按照 `Name,Status,Step,Expected Result` 四列格式输出：
+  - Name：功能点名称
+  - Status：默认为 Draft（可选值：Draft / Approved 等）
+  - Step：测试步骤
+  - Expected Result：预期结果
+  - 同一功能点的多个用例中，第二条起 Name 和 Status 留空（与 CSV 模版一致）
+
+CSV 模版位于：`test-case-templates/default-template.csv`
 
 等待用户确认后再进入下一步。
 
@@ -116,7 +123,8 @@ inclusion: manual
 
 ## 测试用例模版
 
-默认模版位于：#[[file:test-case-templates/default-template.md]]
+- Markdown 模版：#[[file:test-case-templates/default-template.md]]
+- CSV 模版：#[[file:test-case-templates/default-template.csv]]
 
 ## 生成规则
 
