@@ -1,4 +1,4 @@
-Name,Status,Step,Expected Result
+Name,Status,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result
 {功能点名称},Draft,"1. {步骤1}
 2. {步骤2}","1. {预期结果1}
 2. {预期结果2}"

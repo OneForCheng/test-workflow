@@ -79,11 +79,11 @@ inclusion: manual
 - `.md`（Markdown）：结构清晰，便于阅读和版本管理
 - `.csv`：便于导入测试管理工具或用 Excel 查看编辑
 
-根据用户选择的格式生成对应文件。如果用户选择 `.csv`，则按照 `Name,Status,Step,Expected Result` 四列格式输出：
+根据用户选择的格式生成对应文件。如果用户选择 `.csv`，则按照 `Name,Status,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Expected Result` 四列格式输出：
   - Name：功能点名称
   - Status：默认为 Draft（可选值：Draft / Approved 等）
-  - Step：测试步骤
-  - Expected Result：预期结果
+  - Test Script (Step-by-Step) - Step：测试步骤
+  - Test Script (Step-by-Step) - Expected Result：预期结果
   - 同一功能点的多个用例中，第二条起 Name 和 Status 留空（与 CSV 模版一致）
 
 CSV 模版位于：`test-case-templates/default-template.csv`
@@ -100,8 +100,8 @@ CSV 模版位于：`test-case-templates/default-template.csv`
    - 状态（Status）：默认为 Draft
    - 优先级（Priority）：Critical / High / Normal（用于内部分析和对话中的总结，不一定输出到文件）
    - 一个或多个用例，每个用例包含：
-     - 测试步骤（Step）：编号列表，描述具体操作
-     - 预期结果（Expected Result）：编号列表，与步骤对应
+     - 测试步骤（Test Script (Step-by-Step) - Step）：编号列表，描述具体操作
+     - 预期结果（Test Script (Step-by-Step) - Expected Result）：编号列表，与步骤对应
 3. 最终输出到文件的字段以第五步确认的输出格式为准（输出字段是生成字段的子集）
 4. 同一功能点下可按不同角色、不同场景拆分为多个用例
 5. 生成的文件存放在 `test-cases/` 目录下，按功能模块组织
