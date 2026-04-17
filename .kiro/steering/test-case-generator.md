@@ -114,6 +114,12 @@ inclusion: manual
 
 - Markdown 模版：#[[file:test-case-templates/default-template.md]]
 - CSV 模版：#[[file:test-case-templates/default-template.csv]]
+- Agent 模版（Markdown）：#[[file:test-case-templates/template-for-agent.md]]
+- Agent 模版（CSV）：#[[file:test-case-templates/template-for-agent.csv]]
+
+### 模版配对约定
+
+每个 `.csv` 模版都应有一个同名的 `.md` 文件作为其字段描述文件。`.md` 文件中包含各字段的说明、默认值、约束和规则等上下文信息。生成 `.csv` 格式的测试用例时，必须同时读取并参考同名 `.md` 文件中的字段定义和约束，确保生成内容符合字段规则。`.csv` 格式输出的列一般是同名 `.md` 文件中定义字段的子集或相同列。
 
 ## 生成规则
 
